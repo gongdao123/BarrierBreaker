@@ -1,0 +1,98 @@
+#! /usr/bin/env python
+# coding=utf-8
+
+from uuid import getnode as get_mac
+from datetime import datetime
+import socket
+import hashlib
+import urllib2
+import urllib
+import subprocess
+import json
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+REQUEST_URL = 'http://breaker.linode4.no-ip.net/proxys/get_data/'
+CHECK_URL = 'https://www.google.com/'
+HASH_SALT = "MA"
+
+class HeadRequest(urllib2.Request):
+    def get_method(self):
+        return "HEAD"
+
+def get_ip_address():
+    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    s.connect(("114.114.114.114",80))
+    ip_address =s.getsockname()[0]
+    print "Your IP address is: %s" % s.getsockname()[0]
+    s.close()
+    return ip_address
+
+def get_hash_id():
+    mac = get_mac()
+    m = hashlib.md5()
+    m.update(str(mac) + HASH_SALT)
+    return m.hexdigest()
+
+def is_bad_proxy(pip):    
+    proxy_handler = urllib2.ProxyHandler({'http': pip, 'https': pip})
+    opener = urllib2.build_opener(proxy_handler)
+    opener.addheaders = [('User-agent', 'Mozilla/5.0')]
+    urllib2.install_opener(opener)
+    req = HeadRequest('https://www.google.com')
+    return url_open(req)
+
+def push_result(result):
+    url = "%s?%s" % (REQUEST_URL, urllib.urlencode(result))
+    print "URL: %s" % url
+    proxy_handler = urllib2.ProxyHandler({})
+    opener = urllib2.build_opener(proxy_handler)
+    urllib2.install_opener(opener)
+    req = urllib2.Request(url)
+    return url_open(req)
+
+def url_open(req):
+    try:
+        response=urllib2.urlopen(req)
+    except urllib2.HTTPError, e:
+        print 'Error code: ', e.code
+        return e.code
+    except Exception, detail:
+        print "ERROR:", detail
+        return True
+    return False
+
+def get_proxy_port():    
+    source = 'source %s' % (os.path.join(BASE_DIR, "settings.conf"))
+    dump = '/usr/bin/python -c "import os, json;print json.dumps(dict(os.environ))"'
+    stdout, stderr = run_cmd(['/bin/bash', '-c', '%s && %s' % (source, dump) ])
+    env = json.loads(stdout)
+    return env["POLIPO_PROXY_PORT"]
+
+def run_cmd(commond_list):
+    process = subprocess.Popen(commond_list, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+    stdout, stderr = process.communicate()
+    return stdout, stderr
+
+def main():
+    print datetime.now()
+    proxy_port = get_proxy_port()
+    
+    result = {}
+    result["hash_id"] = get_hash_id()
+    result["lan_ip"] = get_ip_address()
+
+    proxy_status = not is_bad_proxy("%s:%s" % (result["lan_ip"], proxy_port))
+    result["status"] = proxy_status
+    
+    push_status = not push_result(result)
+    
+    #restart only when proxy failed, not network down.
+    if proxy_status == False and push_status == True:
+        start_proxy_script = os.path.join(BASE_DIR, "start_proxy")
+        stdout, stderr = run_cmd(start_proxy_script)
+        print stdout
+
+if __name__ == "__main__":
+    main()
+
