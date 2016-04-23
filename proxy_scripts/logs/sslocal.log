@@ -1,0 +1,127 @@
+2016-03-05 15:56:49 INFO     starting local at 127.0.0.1:1080
+2016-03-05 15:56:49 ERROR    [Errno 48] Address already in use
+2016-03-05 15:58:02 INFO     starting local at 127.0.0.1:1080
+2016-03-05 15:58:02 ERROR    [Errno 48] Address already in use
+2016-03-05 15:59:18 INFO     starting local at 127.0.0.1:1080
+2016-03-05 15:59:18 ERROR    [Errno 48] Address already in use
+2016-03-05 15:59:21 INFO     starting local at 127.0.0.1:1080
+2016-03-05 15:59:21 ERROR    [Errno 48] Address already in use
+2016-03-05 16:00:32 INFO     starting local at 127.0.0.1:1080
+2016-03-05 16:00:34 INFO     starting local at 127.0.0.1:1080
+2016-03-05 16:00:37 INFO     starting local at 127.0.0.1:1080
+2016-03-05 16:00:38 INFO     starting local at 127.0.0.1:1080
+2016-03-05 16:00:39 INFO     starting local at 127.0.0.1:1080
+2016-03-05 16:00:57 INFO     connecting tiles.services.mozilla.com:443 from 127.0.0.1:59243
+2016-03-05 16:01:02 INFO     connecting www.facebook.com:443 from 127.0.0.1:59247
+2016-03-05 16:01:02 INFO     connecting fbstatic-a.akamaihd.net:443 from 127.0.0.1:59250
+2016-03-05 16:01:04 INFO     connecting fbcdn-dragon-a.akamaihd.net:443 from 127.0.0.1:59254
+2016-03-05 16:01:04 INFO     connecting fbstatic-a.akamaihd.net:443 from 127.0.0.1:59255
+2016-03-05 16:01:04 INFO     connecting safebrowsing.google.com:443 from 127.0.0.1:59259
+2016-03-05 16:01:08 INFO     connecting stats-public.grammarly.io:443 from 127.0.0.1:59262
+2016-03-05 16:10:28 INFO     starting local at 127.0.0.1:1080
+2016-03-05 16:10:30 INFO     starting local at 127.0.0.1:1080
+2016-03-05 16:10:31 INFO     starting local at 127.0.0.1:1080
+2016-03-05 16:10:32 INFO     starting local at 127.0.0.1:1080
+2016-03-05 16:10:33 INFO     starting local at 127.0.0.1:1080
+2016-03-05 16:25:27 INFO     connecting www.mydrivers.com:80 from 127.0.0.1:59751
+2016-03-05 16:25:28 INFO     connecting img1.mydrivers.com:80 from 127.0.0.1:59754
+2016-03-05 16:25:28 INFO     connecting img1.mydrivers.com:80 from 127.0.0.1:59757
+2016-03-05 16:25:28 INFO     connecting 11.mydrivers.com:80 from 127.0.0.1:59767
+2016-03-05 16:25:28 INFO     connecting 11.mydrivers.com:80 from 127.0.0.1:59770
+2016-03-05 16:25:28 INFO     connecting icons.mydrivers.com:80 from 127.0.0.1:59775
+2016-03-05 16:25:29 INFO     connecting dt.mydrivers.com:80 from 127.0.0.1:59780
+2016-03-05 16:25:29 INFO     connecting www.google-analytics.com:80 from 127.0.0.1:59783
+2016-03-05 16:25:29 INFO     connecting cbjs.baidu.com:80 from 127.0.0.1:59787
+2016-03-05 16:25:29 INFO     connecting cbjs.baidu.com:80 from 127.0.0.1:59788
+2016-03-05 16:25:29 INFO     connecting img1.mydrivers.com:80 from 127.0.0.1:59791
+2016-03-05 16:25:29 INFO     connecting img1.mydrivers.com:80 from 127.0.0.1:59792
+2016-03-05 16:25:29 INFO     connecting img1.mydrivers.com:80 from 127.0.0.1:59795
+2016-03-05 16:25:30 INFO     connecting img1.mydrivers.com:80 from 127.0.0.1:59797
+2016-03-05 16:25:30 INFO     connecting img1.mydrivers.com:80 from 127.0.0.1:59799
+2016-03-05 16:25:30 INFO     connecting img1.mydrivers.com:80 from 127.0.0.1:59801
+2016-03-05 16:25:30 INFO     connecting img1.mydrivers.com:80 from 127.0.0.1:59802
+2016-03-05 16:25:30 INFO     connecting 11.mydrivers.com:80 from 127.0.0.1:59805
+2016-03-05 16:25:30 INFO     connecting 11.mydrivers.com:80 from 127.0.0.1:59806
+2016-03-05 16:25:30 INFO     connecting 11.mydrivers.com:80 from 127.0.0.1:59809
+2016-03-05 16:25:30 INFO     connecting 11.mydrivers.com:80 from 127.0.0.1:59811
+2016-03-05 16:25:30 INFO     connecting img1.mydrivers.com:80 from 127.0.0.1:59816
+2016-03-05 16:25:30 INFO     connecting news.mydrivers.com:80 from 127.0.0.1:59814
+2016-03-05 16:25:30 INFO     connecting www.duba.com:80 from 127.0.0.1:59815
+2016-03-05 16:25:30 INFO     connecting news.mydrivers.com:80 from 127.0.0.1:59813
+2016-03-05 16:25:30 INFO     connecting img1.mydrivers.com:80 from 127.0.0.1:59818
+2016-03-05 16:25:30 INFO     connecting img1.mydrivers.com:80 from 127.0.0.1:59817
+2016-03-05 16:25:30 INFO     connecting img1.mydrivers.com:80 from 127.0.0.1:59819
+2016-03-05 16:25:30 INFO     connecting img1.mydrivers.com:80 from 127.0.0.1:59820
+2016-03-05 16:25:30 INFO     connecting img1.mydrivers.com:80 from 127.0.0.1:59826
+2016-03-05 16:25:30 INFO     connecting img1.mydrivers.com:80 from 127.0.0.1:59829
+2016-03-05 16:25:30 INFO     connecting icons.mydrivers.com:80 from 127.0.0.1:59836
+2016-03-05 16:25:30 INFO     connecting img1.mydrivers.com:80 from 127.0.0.1:59838
+2016-03-05 16:25:31 INFO     connecting img1.mydrivers.com:80 from 127.0.0.1:59848
+2016-03-05 16:25:31 INFO     connecting icons.mydrivers.com:80 from 127.0.0.1:59850
+2016-03-05 16:25:31 INFO     connecting img1.mydrivers.com:80 from 127.0.0.1:59852
+2016-03-05 16:25:31 INFO     connecting www.mydrivers.com:80 from 127.0.0.1:59854
+2016-03-05 16:25:32 INFO     connecting weather.123.duba.net:80 from 127.0.0.1:59856
+2016-03-05 16:25:32 INFO     connecting news.mydrivers.com:80 from 127.0.0.1:59868
+2016-03-05 16:25:32 INFO     connecting img1.mydrivers.com:80 from 127.0.0.1:59870
+2016-03-05 16:25:32 INFO     connecting img1.mydrivers.com:80 from 127.0.0.1:59872
+2016-03-05 16:25:32 INFO     connecting img1.mydrivers.com:80 from 127.0.0.1:59874
+2016-03-05 16:25:32 INFO     connecting 11.mydrivers.com:80 from 127.0.0.1:59879
+2016-03-05 16:25:32 INFO     connecting hm.baidu.com:80 from 127.0.0.1:59887
+2016-03-05 16:25:32 INFO     connecting news.mydrivers.com:80 from 127.0.0.1:59889
+2016-03-05 16:25:33 INFO     connecting img1.mydrivers.com:80 from 127.0.0.1:59892
+2016-03-05 16:25:33 INFO     connecting pos.baidu.com:80 from 127.0.0.1:59894
+2016-03-05 16:25:33 INFO     connecting pos.baidu.com:80 from 127.0.0.1:59896
+2016-03-05 16:25:33 INFO     connecting icons.mydrivers.com:80 from 127.0.0.1:59898
+2016-03-05 16:25:34 INFO     connecting news.mydrivers.com:80 from 127.0.0.1:59900
+2016-03-05 16:25:34 INFO     connecting news.mydrivers.com:80 from 127.0.0.1:59902
+2016-03-05 16:25:34 INFO     connecting icons.mydrivers.com:80 from 127.0.0.1:59903
+2016-03-05 16:25:34 INFO     connecting www.duba.com:80 from 127.0.0.1:59906
+2016-03-05 16:25:34 INFO     connecting icons.mydrivers.com:80 from 127.0.0.1:59908
+2016-03-05 16:25:34 INFO     connecting news.mydrivers.com:80 from 127.0.0.1:59910
+2016-03-05 16:25:34 INFO     connecting cbjs.baidu.com:80 from 127.0.0.1:59912
+2016-03-05 16:25:34 INFO     connecting news.mydrivers.com:80 from 127.0.0.1:59914
+2016-03-05 16:25:34 INFO     connecting www.duba.com:80 from 127.0.0.1:59915
+2016-03-05 16:25:34 INFO     connecting icons.mydrivers.com:80 from 127.0.0.1:59918
+2016-03-05 16:25:34 INFO     connecting icons.mydrivers.com:80 from 127.0.0.1:59920
+2016-03-05 16:25:35 INFO     connecting news.mydrivers.com:80 from 127.0.0.1:59922
+2016-03-05 16:25:35 INFO     connecting cbjslog.baidu.com:80 from 127.0.0.1:59923
+2016-03-05 16:25:35 INFO     connecting cbjslog.baidu.com:80 from 127.0.0.1:59926
+2016-03-05 16:25:35 INFO     connecting icons.mydrivers.com:80 from 127.0.0.1:59927
+2016-03-05 16:25:35 INFO     connecting www.duba.com:80 from 127.0.0.1:59930
+2016-03-05 16:25:35 INFO     connecting news.mydrivers.com:80 from 127.0.0.1:59932
+2016-03-05 16:25:35 INFO     connecting icons.mydrivers.com:80 from 127.0.0.1:59934
+2016-03-05 16:25:35 INFO     connecting news.mydrivers.com:80 from 127.0.0.1:59936
+2016-03-05 16:25:35 INFO     connecting d3cv4a9a9wh0bt.cloudfront.net:443 from 127.0.0.1:59939
+2016-03-05 16:30:36 WARNING  timed out
+2016-03-05 17:30:14 INFO     connecting www.google.com:443 from 127.0.0.1:61145
+2016-03-05 17:30:15 INFO     connecting www.google.com.sg:443 from 127.0.0.1:61148
+2016-03-05 17:32:00 INFO     starting local at 127.0.0.1:1080
+2016-03-05 17:32:20 INFO     connecting www.google.com:443 from 127.0.0.1:61184
+2016-03-05 17:32:20 INFO     connecting www.google.com.sg:443 from 127.0.0.1:61187
+2016-03-05 17:32:46 INFO     connecting www.google.com:443 from 127.0.0.1:61197
+2016-03-05 17:32:47 INFO     connecting www.google.com.sg:443 from 127.0.0.1:61200
+stopped
+started
+2016-03-05 17:33:00 INFO     starting local at 127.0.0.1:1080
+stopped
+started
+2016-03-05 17:35:28 INFO     starting local at 127.0.0.1:1080
+2016-03-05 17:36:25 INFO     connecting www.google.com:443 from 127.0.0.1:61306
+2016-03-05 17:36:26 INFO     connecting www.google.com.sg:443 from 127.0.0.1:61309
+stopped
+started
+2016-03-05 17:36:39 INFO     starting local at 127.0.0.1:1080
+2016-03-05 17:51:28 INFO     connecting www.google.com:443 from 127.0.0.1:61575
+2016-03-05 17:51:29 INFO     connecting www.google.com.sg:443 from 127.0.0.1:61578
+stopped
+started
+2016-03-05 17:51:46 INFO     starting local at 127.0.0.1:1080
+2016-03-05 17:52:20 INFO     connecting www.google.com:443 from 127.0.0.1:61596
+2016-03-05 17:52:21 INFO     connecting www.google.com.sg:443 from 127.0.0.1:61600
+stopped
+started
+2016-03-05 17:52:35 INFO     starting local at 127.0.0.1:1080
+stopped
+started
+2016-03-05 17:53:23 INFO     starting local at 127.0.0.1:1080
+started

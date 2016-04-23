@@ -1,0 +1,22 @@
+#!/bin/bash
+
+BASE_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+CONF_FILE_PATH=${BASE_DIR%%/}/settings.conf
+
+echo "Reading config from: $CONF_FILE_PATH" >&2
+. $CONF_FILE_PATH
+
+echo "Config for the proxy port: $POLIPO_PROXY_PORT" >&2
+
+#Start the shadowsocks proxy
+$SS_DAEMON -s $SS_SERVER_IP -p $SS_SERVER_PORT -k $SS_SERVER_PASS -m $SS_SERVER_METHOD -d restart --pid-file=$SS_PID_FILE --log-file=$SS_LOG_FILE
+
+#Try to kill running polipo && remove the PID file as well.
+killall polipo
+if [ -f $POLIPO_PID_FILE ] ; then
+    rm $POLIPO_PID_FILE
+fi
+
+#Start the polipo http proxy
+polipo daemonise=true pidFile=$POLIPO_PID_FILE logFile=$POLIPO_LOG_FILE socksParentProxy=$POLIPO_SOCKS_IP:$POLIPO_SOCKS_PORT socksProxyType=socks5 proxyPort=$POLIPO_PROXY_PORT proxyAddress=$POLIPO_PROXY_IP
+ 
